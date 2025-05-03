@@ -1,0 +1,56 @@
+.card {
+    border-radius: 20px;
+    font-family: Satoshi;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        height: 70px;
+        text-align: left;
+    }
+
+    span {
+        color: #00000060;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    &__old-price {
+        text-decoration: line-through;
+        color: #00000060;
+        padding: 0px 15px;
+        font-family: Satoshi;
+    }
+
+    &__discount {
+        background-color: #ff333343;
+        border-radius: 100px;
+        font-size: 13px;
+        font-family: Satoshi;
+        p {
+            color: #FF3333;
+            padding: 0px 20px;
+        }
+        @media (max-width: 768px) {
+            font-size: 8px;
+            p {
+                padding: 0px 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.Co - Clothes that match your style!</title>
+    <meta name="description" content="Shop the latest fashion trends with top international brands. Discover high-quality clothing that matches your style and enjoy exclusive deals at Shop.co!">
+    <meta name="keywords" content="Shirts, Pants, T-shirts, Clothing, Verssace, Zara, GUCCI, Prada, CalvinKlein, Online Shopping, Casual, Formal, Gym">
+
+    <link rel="stylesheet" href="/src/styles/css/main.css">
+</head>
+<header class="header">
+    <div class="header__announcement">
+        <div class="header__announcement-text">
+            <p>Sign up and get 20% off to your first order. <span><a href="sign-up.html">Sign up now</a></span></p>
+        </div>
+        <div class="header__announcement-close">
+            <i id="closeButton" class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    <div class="header__main">
+        <div class="burger-menu">
+            <i class="burger-menu fa-solid fa-bars"></i>
+        </div>
+
+        <div class="header__logo">
+            <a href="index.html"><p>SHOP.CO</p></a>
+        </div>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <select name="Shop" id="asd">
+                    <option value="shop">Shop</option>
+                    <option value="gucci">Gucci</option>
+                    <option value="versace">Versace</option>
+                    <option value="zara">Zara</option>
+                    <option value="prada">Prada</option>
+                </select>
+                <div class="header__nav-item"><p>On Sale</p></div>
+                <div class="header__nav-item"><p>New Arrivals</p></div>
+                <div class="header__nav-item"><p>Brands</p></div>
+            </ul>
+        </nav>
+
+        <nav class="header__nav-mobile">
+            <ul class="header__nav-mobile-list">
+                <div class="x-mark">
+                    <i class="close-burger-menu fa-solid fa-xmark"></i>
+                </div>
+                <div class="header__nav-mobile-item"><p>Home</p></div>
+                <div class="header__nav-mobile-item"><p>About</p></div>
+                <div class="header__nav-mobile-item">
+                    <p>Services</p>
+                </div>
+                <div class="drop-down">
+                    <div class="drop-down-items">
+                        <p>Privacy Policy</p>
+                        <p>Privacy Policy</p>
+                        <p>Privacy Policy</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="header__nav-mobile-item"><p>Shop</p></div>
+                <div class="header__nav-mobile-item"><p>Testimonials</p></div>
+                <div class="mobile-button">
+                    <a href="sign-up.html"><button class="button-black">Sign Up Now</button></a>
+                </div>
+            </ul>
+        </nav>
+        
+        <div class="header__search">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input type="text" placeholder="Search for products...">
+        </div>
+
+        <div class="header__user">
+            <i class="mobile-search fa-solid fa-magnifying-glass"></i>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+            <a href="sign-up.html"><i class="fa-regular fa-circle-user"></i></a> 
+        </div>
+    </div>
+</header>
+
+<body data-page="cart">
+    <div class="container">
+        <div class="content-div">
+            <div class="page-path">
+                <a href="index.html"><p>Home</p></a>
+                <i class="fa-solid fa-greater-than"></i>
+                <div class="active">
+                    <p>Cart</p>
+                </div>
+            </div>
+
+            <div class="cart-main-content">
+                <section class="cart">
+                    <div class="cart-header">
+                        <p>Your Cart</p>
+                    </div>
+    
+                    <div class="cart-items">
+                       <!-- data injected from local storage  -->
+                    </div>
+                </section>
+    
+                <section class="summary">
+                    <div class="summary-items">
+                        <div class="summary-header">
+                            <p>Order Summary</p>
+                        </div>
+                        <div class="summary-fees">
+                            <div class="summary-fees-item">
+                                <p>Subtotal</p>
+                                <div class="price">
+                                    <p>$565</p>
+                                </div>
+                            </div>
+    
+                            <div class="summary-fees-item">
+                                <p>Disocunt (20%)</p>
+                                <div class="discount">
+                                    <p>-$133</p>
+                                </div>
+                            </div>
+    
+                            <div class="summary-fees-item">
+                                <p>Delivery Fee</p>
+                                <div class="price">
+                                    <p>15$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-total">
+                            <p>Total</p>
+                            <div class="total-price">
+                                <p class="price-total">$467</p>
+                            </div>
+                        </div>
+                        <div class="summary-promo">
+                            <div class="summary-promo-input">
+                                <input class="promo-input" type="text" placeholder="Add promo code. psst.. It's 'saba'">
+                            </div>
+                            <div class="summary-promo-button">
+                                <button class="promo-button button-black">Apply</button>
+                            </div>
+                        </div>
+                        <div class="summary-button">
+                            <button class="button-black">
+                                Go To Checkout
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <!-- footers newsletter  -->
+            <div class="footer__newsl"> 
+                <div class="footer__newsl-title">
+                    <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+                </div>
+
+                <div class="footer__newsl-inputs">
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Enter you email address">
+                    </div>
+                    
+                    <button class="button-white">Subscribe to Newsletter</button>
+
+                </div>
+            </div>
+
+            <div class="footer__main">
+                <div class="footer__main-item">
+                    <div class="footer__logo">
+                        <a href="index.html"><p>SHOP.CO</p></a>
+                    </div>
+
+                    <div class="footer__description">
+                        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    </div>
+
+                    <div class="footer__icons">
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Company</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>About</p>
+                            <p>Features</p>
+                            <p>Works</p>
+                            <p>Career</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Help</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Customer Support</p>
+                            <p>Delivery Details</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>FAQ</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Account</p>
+                            <p>Manage Deliveries</p>
+                            <p>Orders</p>
+                            <p>Payments</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Resources</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Free eBooks</p>
+                            <p>Development Tutorial</p>
+                            <p>How to - Blog</p>
+                            <p>Youtube Playlist</p>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer copyright & payments section  -->
+            <div class="footer__bottom">
+                <div class="copyright">
+                    <p>© 2000-2021, All rights reserved</p>
+                </div>
+
+                <div class="footer__payments">
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/visa.svg" alt="visa">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/mastercard.svg" alt="mastercard">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/paypal.svg" alt="paypal">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/applepay.svg" alt="apple pay">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/googlepay.svg" alt="google pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <script type="module" src="/src/js/script.js"></script>
+     <script src="https://kit.fontawesome.com/ee88f5a023.js" crossorigin="anonymous"></script> <!-- fontawesome plugin -->
+</body>
+</html>

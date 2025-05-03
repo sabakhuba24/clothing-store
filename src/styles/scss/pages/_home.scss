@@ -1,0 +1,292 @@
+//hero section style
+.hero {
+    &__landing {
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+
+        &-large {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &-mobile {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        &-content {
+            width: 90%;
+            position: absolute;
+            top: 1;
+            bottom: 0;
+            @media (max-width: 768px) {
+                position: inherit;
+                background-color: #f2f0f1;
+                padding: 0px 30px;
+            }
+        }
+
+        &-title {
+            width: 40%;
+            font-size: 35px;
+            font-family: Satoshi;
+            text-transform: uppercase;
+            @media (max-width: 1430px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 1163px) {
+                width: 50%;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                font-size: 30px;
+                font-family: Integral;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 19px;
+            }
+        }
+
+        &-description {
+            font-size: 18px;
+            font-family: Satoshi;
+            color: #00000060;
+            width: 45%;
+
+            @media (max-width: 1024px) {
+                font-size: 13px;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__stats {
+        display: flex;
+        width: 50%;
+        padding: 50px 0;
+        @media (max-width: 1430px) {
+            padding: 30px 0;
+        }
+        @media (max-width: 768px) {
+            padding: 70px 0;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media (max-width: 380px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-item {
+            padding: 0px 20px;
+            font-family: Satoshi;
+            &:nth-child(1),
+            &:nth-child(2) {
+                border-right: 2px solid #00000060;
+
+                @media (max-width: 480px) {
+                    &:nth-child(2) {
+                        border-right: none;
+                    }
+                }
+
+                @media (max-width: 380px) {
+                    border: none;
+                }
+            }
+
+            @media (max-width: 1024px) {
+                margin-top: -40px;
+            }
+
+            @media (max-width: 380px) {
+                margin-top: 0;
+            }
+
+            @media (max-width: 480px) {
+                &:nth-child(3) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &-number {
+            font-size: 40px;
+            font-weight: bold;
+            @media (max-width: 1024px) {
+                font-size: 10px;
+            }
+            @media (max-width: 1024px) {
+                font-size: 25px;
+            }
+        }
+
+        &-text {
+            color: #00000060;
+            padding: 10px 0;
+
+            @media (max-width: 1024px) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__button {
+        padding-top: 50px;
+
+        @media (max-width: 1024px) {
+            padding-top: 20px;
+        }
+
+        button {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__brands {
+        background-color: #000000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px 0;
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+    }
+}
+
+// products - "New Arrivals" & "Top Seller" section styles
+.products {
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        width: 90%;
+    }
+
+    &__title {
+        font-family: Integral;
+        text-align: center;
+        font-size: 30px;
+        padding: 50px 0;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+
+        &-item {
+            padding: 50px 0;
+            width: 100%;
+            border-bottom: 3px solid #00000010;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+// style categories - "Browse by Dress Style" section styles
+.style-categories {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+
+    &__content {
+        width: 90%;
+        background-color: #f0f0f0;
+        border-radius: 20px;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: Integral;
+        font-size: 30px;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__card {
+        position: relative;
+        padding: 10px 20px;
+
+        &-image {
+            img {
+                width: 100%;
+                border-radius: 20px;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        &-label {
+            position: absolute;
+            top: 0;
+            font-family: Satoshi;
+            font-size: 25px;
+            padding: 0px 30px;
+        }
+
+        .mobile-img {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

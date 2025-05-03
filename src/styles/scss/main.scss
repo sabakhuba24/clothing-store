@@ -1,0 +1,19 @@
+@import "./base/fonts";
+@import "./base/normalize";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/footer";
+
+// page-specific styles
+@import "./pages/home";
+@import "./pages/category";
+@import "./pages/cart";
+@import "./pages/product-page";
+@import "./pages/auth";
+
+// components
+@import "./components/button";
+@import "./components/products";
+@import "./components/customer-review";
+@import "./components/_input";

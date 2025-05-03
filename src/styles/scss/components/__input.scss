@@ -1,0 +1,8 @@
+.input-style {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #04030860;
+    &::placeholder {
+        font-family: Satoshi;
+    }
+}

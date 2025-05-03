@@ -1,0 +1,187 @@
+.container {
+    display: flex;
+    justify-content: center;
+    .content-div {
+        width: 90%;
+    }
+}
+
+.cart-main-content {
+    display: flex;
+    gap: 20px;
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.cart {
+    width: 60%;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+    &-header {
+        font-family: Integral;
+        font-size: 40px;
+    }
+    .cart-items {
+        border: 1px solid #00000060;
+        padding: 20px;
+        border-radius: 30px;
+    }
+    .cart-card {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #00000060;
+        padding: 20px 0;
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .cart-card-product {
+                font-size: 20px;
+                font-weight: 800;
+                display: flex;
+                gap: 30px;
+                width: 100%;
+                img {
+                    width: 10rem;
+                    @media (max-width:430px) {
+                        width: 6rem;
+                    }
+                }
+                &__text {
+                    @media (max-width:430px) {
+                        font-size: 13px;
+                    }
+                    &-features {
+                        font-size: 16px;
+                        font-weight: normal;
+                        span {
+                            color: #00000060;
+                        }
+                    }
+                    &-price {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .cart-card-functions {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 50%;
+                .delete {
+                    i {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        color: #FF3333;
+                        font-size: 20px;
+                    }
+                }
+
+                .quantity {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 30px;
+                    gap: 20px;
+                    width: 8rem;
+                    background-color: #F0F0F0;
+                    @media (max-width:430px) {
+                        width: 5rem;
+                        font-size: 14px;
+                        gap: 15px;
+                    }
+                    i {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.summary {
+    width: 40%;
+    margin-top: 125px;
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin-top: 0;
+    }
+    &-items {
+        border: 1px solid #00000060;
+        padding: 20px;
+        border-radius: 30px;
+        .summary-header {
+            font-size: 24px;
+            font-weight: 800;
+        }
+        .summary-fees {
+            border-bottom: 1px solid #00000060;
+            padding-bottom: 20px;
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 20px;
+                color: #00000060;
+                .price {
+                    font-weight: 800;
+                    color: #000000;
+                }
+                .discount {
+                    font-weight: 800;
+                    color: #FF3333;
+                }
+            }
+        }
+        .summary-total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .total-price {
+                font-weight: 800;
+                font-size: 24px;
+            }
+        }
+        .summary-promo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-input {
+                width: 70%;
+                input {
+                    border: none;
+                    background-color: #F0F0F0;
+                    color: #00000060;
+                    border-radius: 30px;
+                    padding: 15px;
+                    width: 100%;
+                    @media (max-width: 600px) {
+                        width: auto;
+                    }
+                }
+            }
+            &-button {
+                button {
+                    padding: 15px 35px;
+                }
+            }
+        }
+        .summary-button {
+            padding: 30px 0;
+            button {
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+    }
+}

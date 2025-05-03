@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.Co - Clothes that match your style!</title>
+    <meta name="description" content="Shop the latest fashion trends with top international brands. Discover high-quality clothing that matches your style and enjoy exclusive deals at Shop.co!">
+    <meta name="keywords" content="Shirts, Pants, T-shirts, Clothing, Verssace, Zara, GUCCI, Prada, CalvinKlein, Online Shopping, Casual, Formal, Gym">
+
+    <link rel="stylesheet" href="/src/styles/css/main.css">
+</head>
+<header class="header">
+    <div class="header__announcement">
+        <div class="header__announcement-text">
+            <p>Sign up and get 20% off to your first order. <span><a href="sign-up.html">Sign up now</a></span></p>
+        </div>
+        <div class="header__announcement-close">
+            <i id="closeButton" class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    <div class="header__main">
+        <div class="burger-menu">
+            <i class="burger-menu fa-solid fa-bars"></i>
+        </div>
+
+        <div class="header__logo">
+            <a href="index.html"><p>SHOP.CO</p></a>
+        </div>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <select name="Shop" id="asd">
+                    <option value="shop">Shop</option>
+                    <option value="gucci">Gucci</option>
+                    <option value="versace">Versace</option>
+                    <option value="zara">Zara</option>
+                    <option value="prada">Prada</option>
+                </select>
+                <div class="header__nav-item"><p>On Sale</p></div>
+                <div class="header__nav-item"><p>New Arrivals</p></div>
+                <div class="header__nav-item"><p>Brands</p></div>
+            </ul>
+        </nav>
+
+        <nav class="header__nav-mobile">
+            <ul class="header__nav-mobile-list">
+                <div class="x-mark">
+                    <i class="close-burger-menu fa-solid fa-xmark"></i>
+                </div>
+                <div class="header__nav-mobile-item"><p>Home</p></div>
+                <div class="header__nav-mobile-item"><p>About</p></div>
+                <div class="header__nav-mobile-item">
+                    <p>Services</p>
+                </div>
+                <div class="drop-down">
+                    <div class="drop-down-items">
+                        <p>Privacy Policy</p>
+                        <p>Privacy Policy</p>
+                        <p>Privacy Policy</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="header__nav-mobile-item"><p>Shop</p></div>
+                <div class="header__nav-mobile-item"><p>Testimonials</p></div>
+                <div class="mobile-button">
+                    <a href="sign-up.html"><button class="button-black">Sign Up Now</button></a>
+                </div>
+            </ul>
+        </nav>
+        
+        <div class="header__search">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input type="text" placeholder="Search for products...">
+        </div>
+
+        <div class="header__user">
+            <i class="mobile-search fa-solid fa-magnifying-glass"></i>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+            <a href="sign-up.html"><i class="fa-regular fa-circle-user"></i></a> 
+        </div>
+    </div>
+</header>
+
+<body data-page="categories">
+    <div class="container">
+        <div class="content-div">
+            <div class="page-path">
+                <a href="index.html"><p>Home</p></a>
+                <i class="fa-solid fa-greater-than"></i>
+                <div class="active">
+                    <p>Casual</p>
+                </div>
+            </div>
+
+            <div class="categories-main">
+                <section class="filter">
+                    <div class="filter-content">
+                        <div class="filter-content-item">
+                            <div class="filter-content-item-title">
+                                <p>Filters</p>
+                            </div>
+                            <div class="filter-icon">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <div class="close-btn">
+                                <i id="filterClose" class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+    
+                        <div class="filter-content-item clothing-types">
+                            <div class="clothing-types-item">
+                                <p>T-shirts</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+                          
+                            <div class="clothing-types-item">
+                                <p>Shorts</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+    
+                            <div class="clothing-types-item">
+                                <p>Shirts</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+    
+                            <div class="clothing-types-item">
+                                <p>Hoodie</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+    
+                            <div class="clothing-types-item">
+                                <p>Jeans</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+                        </div>
+    
+                        <div class="filter-content-item">
+                            <div class="price-filter">
+                                <div class="filter-content-item-title">
+                                    <p>Price</p>
+                                </div>
+                                <div class="slider">
+                                    <input type="range" min="0" max="200" value="50" id="min-range">
+                                    <input type="range" min="0" max="200" value="200" id="max-range">
+                                </div>
+                                <div class="price-values">
+                                    <span id="min-price">$50</span>
+                                    <span id="max-price">$200</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="filter-content-item">
+                            <div class="colors">
+                                <div class="filter-content-item-title">
+                                    <p>Colors</p>
+                                </div>
+        
+                                <div class="colors-palette">
+                                    <div class="color color-green">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-red">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-yellow">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-orange">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-cyan">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-blue">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-purple">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-pink">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-white">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="color color-black">
+                                        <i class="tick-icon fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="filter-content-item">
+                            <div class="size">
+                                <div class="filter-content-item-title">
+                                    <p>Size</p>
+                                </div>
+        
+                                <div class="sizes">
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">XX-Small</button>
+                                    </div>
+            
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">X-Small</button>
+                                    </div>
+                
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">Small</button>
+                                    </div>
+                
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">Medium</button>
+                                    </div>
+    
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">Large</button>
+                                    </div>
+    
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">X-Large</button>
+                                    </div>
+    
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">XX-Large</button>
+                                    </div>
+    
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">3X-Large</button>
+                                    </div>
+    
+                                    <div class="size-option">
+                                        <button class="size-btn button-gray">4X-Large</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="filter-content-item clothing-types border-none">
+                            <div class="filter-content-item-title">
+                                <p>Dress Style</p>
+                            </div>
+    
+                            <div class="clothing-types-item">
+                                <p>Casual</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+                          
+                            <div class="clothing-types-item">
+                                <p>Formal</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+    
+                            <div class="clothing-types-item">
+                                <p>Party</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+    
+                            <div class="clothing-types-item">
+                                <p>Gym</p>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </div>
+                        </div>
+    
+                        <div class="filter-content-button">
+                            <button class="button-black">Apply Filter</button>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="category-products">
+                    <div class="category-products-top">
+                        <div class="category-products-title">
+                            <p>Casual</p>
+                        </div>
+                        <div class="category-products-sorting">
+                            <p>Showing 1-10 of 100 products.</p>
+                            <div class="sort">
+                                <p>Sort By:</p>
+                                <select>
+                                    <option value="most popular">Most Popular</option>
+                                    <option value="Top Selling">Top Selling</option>
+                                </select>
+                            </div>
+                            <div class="filter-toggle">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+
+                        </div>
+                    </div>
+    
+                    <div class="products__content">
+                        <div id="categoriesDiv" class="products__div">
+                            <!-- products are added from data.js  -->
+                        </div>
+                    </div>
+
+                    <div class="page-buttons">
+                        <div class="page-buttons-nav">
+                            <button>
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <p>Previous</p>
+                            </button>
+                        </div>
+
+                        <div class="page-numbers">
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>...</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button>10</button>
+                        </div>
+
+                        <div class="page-buttons-nav">
+                            <button>
+                                <p>Next</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__content">
+            <!-- footers newsletter  -->
+            <div class="footer__newsl"> 
+                <div class="footer__newsl-title">
+                    <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+                </div>
+
+                <div class="footer__newsl-inputs">
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Enter you email address">
+                    </div>
+                    
+                    <button class="button-white">Subscribe to Newsletter</button>
+
+                </div>
+            </div>
+
+            <div class="footer__main">
+                <div class="footer__main-item">
+                    <div class="footer__logo">
+                        <a href="index.html"><p>SHOP.CO</p></a>
+                    </div>
+
+                    <div class="footer__description">
+                        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    </div>
+
+                    <div class="footer__icons">
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Company</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>About</p>
+                            <p>Features</p>
+                            <p>Works</p>
+                            <p>Career</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Help</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Customer Support</p>
+                            <p>Delivery Details</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>FAQ</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Account</p>
+                            <p>Manage Deliveries</p>
+                            <p>Orders</p>
+                            <p>Payments</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Resources</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Free eBooks</p>
+                            <p>Development Tutorial</p>
+                            <p>How to - Blog</p>
+                            <p>Youtube Playlist</p>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer copyright & payments section  -->
+            <div class="footer__bottom">
+                <div class="copyright">
+                    <p>© 2000-2021, All rights reserved</p>
+                </div>
+
+                <div class="footer__payments">
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/visa.svg" alt="visa">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/mastercard.svg" alt="mastercard">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/paypal.svg" alt="paypal">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/applepay.svg" alt="apple pay">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/googlepay.svg" alt="google pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <script type="module" src="/src/js/script.js"></script>
+     <script src="https://kit.fontawesome.com/ee88f5a023.js" crossorigin="anonymous"></script> <!-- fontawesome plugin -->
+</body>
+</html>

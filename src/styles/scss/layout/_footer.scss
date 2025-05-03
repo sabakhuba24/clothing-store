@@ -1,0 +1,171 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+    margin-top: 150px;
+    &__content {
+        width: 90%;
+        position: relative;
+    }
+
+    &__newsl {
+        background-color: #000;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        margin-top: -100px;
+        padding: 20px 0;
+        @media (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+        }
+        &-title {
+            color: #fff;
+            font-family: Integral;
+            display: flex;
+            justify-content: center;
+            width: 45%;
+            font-size: 30px;
+            @media (max-width: 900px) {
+                width: 90%;
+                font-size: 25px;
+            }
+        }
+
+        &-inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+            .email {
+                position: relative;
+                color: #fff;
+                width: 100%;
+                input {
+                    width: 88%;
+                    background-color: #F0F0F0;
+                    border: none;
+                    padding: 15px 0 15px 50px;
+                    border-radius: 20px;
+                    &::placeholder{
+                        font-family: Satoshi;
+                    }
+                    @media (max-width: 430px) {
+                        width: 84%;
+                    }
+                }
+        
+                i {
+                    position: absolute;
+                    top: 33%;
+                    left: 15px;
+                    color: #00000040;
+                    font-size: 20px;
+                }
+            }
+            button {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+
+    }
+
+    &__main {
+        margin-top: 180px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #00000040;
+        @media (max-width: 1024px) {
+            margin-top: 250px;
+        }
+
+        @media (max-width: 430px) {
+            margin-top: 290px;
+        }
+        
+  
+        &-item {
+            font-family: Satoshi;
+            &:nth-child(1) {
+                width: 30%;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__logo{
+        font-family: Integral;
+        font-size: 32px;
+        width: 0%;
+        a {
+            text-decoration: inherit;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 12px;
+        &-social {
+            border: 2px solid #000;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            padding: 5px;
+            font-size: 20px;
+            &:hover {
+                color: #fff;
+                background-color: #000;
+                transition: all .2s;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__list {
+        &-title {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        
+        &-item {
+            padding: 0;
+            color: #0000008a;
+            p {
+                font-size: 16px;
+                padding: 5px 0;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .copyright {
+            font-family: Satoshi;
+            color: #00000040;
+        }
+    }
+
+    &__payments {
+        display: flex;
+    }
+}

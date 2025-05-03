@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.Co - Clothes that match your style!</title>
+    <meta name="description" content="Shop the latest fashion trends with top international brands. Discover high-quality clothing that matches your style and enjoy exclusive deals at Shop.co!">
+    <meta name="keywords" content="Shirts, Pants, T-shirts, Clothing, Verssace, Zara, GUCCI, Prada, CalvinKlein, Online Shopping, Casual, Formal, Gym">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.css">
+
+    <link rel="stylesheet" href="/src/styles/css/main.css">
+</head>
+<header class="header">
+    <div class="header__announcement">
+        <div class="header__announcement-text">
+            <p>Sign up and get 20% off to your first order. <span><a href="sign-up.html">Sign up now</a></span></p>
+        </div>
+        <div class="header__announcement-close">
+            <i id="closeButton" class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    <div class="header__main">
+        <div class="burger-menu">
+            <i class="burger-menu fa-solid fa-bars"></i>
+        </div>
+
+        <div class="header__logo">
+            <a href="index.html"><p>SHOP.CO</p></a>
+        </div>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <select name="Shop" id="asd">
+                    <option value="shop">Shop</option>
+                    <option value="gucci">Gucci</option>
+                    <option value="versace">Versace</option>
+                    <option value="zara">Zara</option>
+                    <option value="prada">Prada</option>
+                </select>
+                <div class="header__nav-item"><p>On Sale</p></div>
+                <div class="header__nav-item"><p>New Arrivals</p></div>
+                <div class="header__nav-item"><p>Brands</p></div>
+            </ul>
+        </nav>
+
+        <nav class="header__nav-mobile">
+                <ul class="header__nav-mobile-list">
+                    <div class="x-mark">
+                        <i class="close-burger-menu fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="header__nav-mobile-item"><p>Home</p></div>
+                    <div class="header__nav-mobile-item"><p>About</p></div>
+                    <div class="header__nav-mobile-item">
+                        <p>Services</p>
+                    </div>
+                    <div class="drop-down">
+                        <div class="drop-down-items">
+                            <p>Privacy Policy</p>
+                            <p>Privacy Policy</p>
+                            <p>Privacy Policy</p>
+                            <p>Privacy Policy</p>
+                        </div>
+                    </div>
+                    <div class="header__nav-mobile-item"><p>Shop</p></div>
+                    <div class="header__nav-mobile-item"><p>Testimonials</p></div>
+                    <div class="mobile-button">
+                        <a href="sign-up.html"><button class="button-black">Sign Up Now</button></a>
+                    </div>
+                </ul>
+           
+        </nav>
+        
+        <div class="header__search">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input type="text" placeholder="Search for products...">
+        </div>
+
+        <div class="header__user">
+            <i class="mobile-search fa-solid fa-magnifying-glass"></i>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+            <a href="sign-up.html"><i class="fa-regular fa-circle-user"></i></a> 
+        </div>
+    </div>
+</header>
+
+<body data-page="home">
+    <!-- landing section  -->
+    <section class="hero">
+        <div class="hero__landing">
+            <div class="hero__image">
+                <img class="hero__image-large" src="/src/assets/images/landing-images/landing-background.png" alt="landing background image">
+                <img class="hero__image-mobile" src="/src/assets/images/landing-images/landing-background-mobile.svg" alt="landing background image mobile">
+            </div>
+    
+            <div class="hero__text">
+                <div class="hero__text-content">
+                    <div class="hero__text-title">
+                        <h1>Find Clothes That Matches Your Style</h1>
+                    </div>
+        
+                    <div class="hero__text-description">
+                        <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                    </div>
+        
+                    <div class="hero__button">
+                        <button class="button-black">Shop Now</button>
+                    </div>
+        
+                    <div class="hero__stats">
+                        <div class="hero__stats-item">
+                            <div class="hero__stats-number">
+                                <p>200+</p>
+                            </div>
+                            <div class="hero__stats-text">
+                                <p>International Brands</p>
+                            </div>
+                        </div>
+        
+                        <div class="hero__stats-item">
+                            <div class="hero__stats-number">
+                                <p>2,000+</p>
+                            </div>
+                            <div class="hero__stats-text">
+                                <p>High-Quality Products</p>
+                            </div>
+                        </div>
+        
+                        <div class="hero__stats-item">
+                            <div class="hero__stats-number">
+                                <p>30,000+</p>
+                            </div>
+                            <div class="hero__stats-text">
+                                <p>Happy Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="swiper hero__brands">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/versace-logo.svg" alt="versace logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/zara-logo.svg" alt="zara logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/gucci-logo.svg" alt="gucci logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/prada-logo.svg" alt="prada logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/calvin-klein-logo.svg" alt="calvin klein logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/versace-logo.svg" alt="versace logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/zara-logo.svg" alt="zara logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/gucci-logo.svg" alt="gucci logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/prada-logo.svg" alt="prada logo"></a>
+              </div>
+
+              <div class="swiper-slide hero__brands-item">
+                <a href="#"><img src="/src/assets/images/brand-logos/calvin-klein-logo.svg" alt="calvin klein logo"></a>
+              </div>
+            </div>
+        </div>       
+    </section>
+
+    <!-- "New Arrivals" section  -->
+    <section class="products">
+        <div class="products__content">
+            <div class="products__title">
+                <h2>New Arrivals</h2>
+            </div>
+    
+            <div id="productsDiv" class="products__div">
+                <!-- products are added from data.js  -->
+            </div>
+    
+            <div class="products__button">
+                <div class="products__button-item">
+                    <a href="categories.html"><button class="button-white">View All</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Sellers Section  -->
+    <section class="products">
+        <div class="products__content">
+            <div class="products__title">
+                <h2>Top Selling</h2>
+            </div>
+    
+            <div id="topSellersDiv" class="products__div">
+                <!-- products are added from data.js  -->
+            </div>
+    
+            <div class="products__button">
+                <div class="products__button-item">
+                    <a href="categories.html"><button class="button-white">View All</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- "Browse by Dress Style" Section  -->
+    <section class="style-categories"> 
+        <div class="style-categories__content">
+            <div class="style-categories__title">
+                <h2>Browse By Dress Style</h2>
+            </div>
+
+            <div class="style-categories__grid">
+                <div class="style-categories__card">
+                    <div class="style-categories__card-label">
+                        <h4>Casual</h4>
+                    </div>
+                    
+                    <div class="style-categories__card-image">
+                        <a href="categories.html"><img src="/src/assets/images/style_categories/casual.svg" alt="casual fits"></a>
+                        <div class="card-image_mobile">
+                            <a href="categories.html"><img class="mobile-img" src="/src/assets/images/style_categories/casual-mobile.svg" alt="casual fits"></a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="style-categories__card">
+                    <div class="style-categories__card-label">
+                        <h4>Formal</h4>
+                    </div>
+                    
+                    <div class="style-categories__card-image">
+                        <a href="categories.html"><img src="/src/assets/images/style_categories/formal.svg" alt="formal fits"></a>   
+                        <div class="card-image_mobile">
+                            <a href="categories.html"><img class="mobile-img" src="/src/assets/images/style_categories/formal-mobile.svg" alt="formal fits"></a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="style-categories__card">
+                    <div class="style-categories__card-label">
+                        <h4>Party</h4>
+                    </div>
+                    
+                    <div class="style-categories__card-image">
+                        <a href="categories.html"><img src="/src/assets/images/style_categories/party.svg" alt="party fits"></a> 
+                        <div class="card-image_mobile">
+                            <a href="categories.html"><img class="mobile-img" src="/src/assets/images/style_categories/party-mobile.svg" alt="party fits"></a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="style-categories__card">
+                    <div class="style-categories__card-label">
+                        <h4>Gym</h4>
+                    </div>
+                    
+                    <div class="style-categories__card-image">
+                        <a href="#"><img src="/src/assets/images/style_categories/gym.svg" alt="gym fits"></a>
+                        <div class="card-image_mobile">
+                            <a href="categories.html"><img class="mobile-img" src="/src/assets/images/style_categories/gym-mobile.svg" alt="gym fits"></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- "Our Happy Customers Section"  -->
+    <section class="customers">
+        <div class="customers__content">
+            <div class="customers__title">
+                <h2>Our Happy Customers</h2>
+                <div class="slider-arrows">
+                    <i class="fa-solid fa-arrow-left" id="swiperPrev" style="cursor:pointer;"></i>
+                    <i class="fa-solid fa-arrow-right" id="swiperNext" style="cursor:pointer;"></i>
+                </div>
+            </div>
+            <div class="swiper customers-swiper">
+                <div class="swiper-wrapper" id="customersWrapper">
+                  <!-- Slides will be injected here by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <!-- footers newsletter  -->
+            <div class="footer__newsl"> 
+                <div class="footer__newsl-title">
+                    <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+                </div>
+
+                <div class="footer__newsl-inputs">
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Enter you email address">
+                    </div>
+                    
+                    <button class="button-white">Subscribe to Newsletter</button>
+
+                </div>
+            </div>
+
+            <div class="footer__main">
+                <div class="footer__main-item">
+                    <div class="footer__logo">
+                        <a href="index.html"><p>SHOP.CO</p></a>
+                    </div>
+
+                    <div class="footer__description">
+                        <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    </div>
+
+                    <div class="footer__icons">
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <div class="footer__icons-social">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Company</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>About</p>
+                            <p>Features</p>
+                            <p>Works</p>
+                            <p>Career</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Help</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Customer Support</p>
+                            <p>Delivery Details</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>FAQ</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Account</p>
+                            <p>Manage Deliveries</p>
+                            <p>Orders</p>
+                            <p>Payments</p>
+                       </ul>
+                    </div>
+                </div>
+
+                
+                <div class="footer__main-item">
+                    <div class="footer__list-title">
+                        <h4>Resources</h4>
+                    </div>
+
+                    <div class="footer__list">
+                       <ul class="footer__list-item">
+                            <p>Free eBooks</p>
+                            <p>Development Tutorial</p>
+                            <p>How to - Blog</p>
+                            <p>Youtube Playlist</p>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer copyright & payments section  -->
+            <div class="footer__bottom">
+                <div class="copyright">
+                    <p>© 2000-2021, All rights reserved</p>
+                </div>
+
+                <div class="footer__payments">
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/visa.svg" alt="visa">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/mastercard.svg" alt="mastercard">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/paypal.svg" alt="paypal">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/applepay.svg" alt="apple pay">
+                    </div>
+
+                    <div class="footer__payments-item">
+                        <img src="/src/assets/images/payments/googlepay.svg" alt="google pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="/node_modules/swiper/swiper-bundle.js"></script>
+
+    <script type="module" src="/src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ee88f5a023.js" crossorigin="anonymous"></script> <!-- fontawesome plugin -->
+</body>
+</html>

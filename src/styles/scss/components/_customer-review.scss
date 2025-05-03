@@ -1,0 +1,89 @@
+// customer style
+.customers {
+    display: flex;
+    justify-content: center;
+    &__content {
+        width: 90%;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Integral;
+        font-size: 30px;
+         
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }            
+    }
+
+    .slider-arrows {
+        i {
+            padding: 0px 10px;
+        }
+        @media (max-width: 768px) {
+            display: flex;
+        }    
+    }
+
+    &__cards {
+        display: flex;
+        gap: 10px;
+        &-item {
+            border: 1px solid #00000060;
+            font-family: Satoshi;
+            border-radius: 20px;
+            height: 200px;
+        }
+    }
+    
+    .customers__rating {
+        padding: 10px;
+    }
+    
+    .customers__name {
+        font-size: 20px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        p {
+            padding: 0px 10px;
+            margin: 0;
+        }
+    }
+    
+    .customers__review {
+        padding: 0px 10px;
+        color: #00000070;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+}
+
+#productDetailReviewDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        width: 45%;
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+        .customers__cards-item {
+            width: 100%;
+        }
+        .customers__review {
+            padding: 0px 10px;
+            color: #00000070;
+            width: 90%;
+        }
+    }
+}
