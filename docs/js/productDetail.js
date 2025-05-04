@@ -53,7 +53,7 @@ export function initProductDetail() {
 
             container.innerHTML += ` 
             <div class="card">
-              <a href="/product.html"><img src="${product.image}" alt="${product.name}"></a>
+              <a href="product.html"><img src="${product.image}" alt="${product.name}"></a>
               <div class="card__title"><h3>${product.name}</h3></div>
               <div class="card__rating">
                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
@@ -191,7 +191,7 @@ export function initProductDetail() {
         const cartItem = {
             id: 1, 
             name: "One Life Graphic T-shirt",
-            image: "/src/assets/images/prodcut_details/shirt-front.svg",
+            image: "images/prodcut_details/shirt-front.svg",
             price: 260,
             size: selectedSize,
             color: selectedColor,

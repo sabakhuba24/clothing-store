@@ -1,6 +1,6 @@
 export const products = [
     {
-        image: "/src/assets/images/products/black t-shirt.svg",
+        image: "images/products/black t-shirt.svg",
         name: "T-shirt with tape details",
         currentRating: 4.5,
         page: "new",
@@ -12,7 +12,7 @@ export const products = [
     
 
     {
-        image: "/src/assets/images/products/black-jeans.svg",
+        image: "images/products/black-jeans.svg",
         name: "Skinny fit jeans",
         currentRating: 3.5,
         page: "new",
@@ -23,7 +23,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/shirt.svg",
+        image: "images/products/shirt.svg",
         name: "checkered shirt",
         currentRating: 4.5,
         page: "new",
@@ -34,7 +34,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/orange t-shirt.svg",
+        image: "images/products/orange t-shirt.svg",
         name: "sleeve striped t-shirt",
         currentRating: 4.5,
         page: "new",
@@ -45,7 +45,7 @@ export const products = [
     },
     
     {
-        image: "/src/assets/images/products/green-shirt.svg",
+        image: "images/products/green-shirt.svg",
         name: "vertical striped shirt",
         currentRating: 4.5,
         page: "top",
@@ -56,7 +56,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/orange-courage-shirt.svg",
+        image: "images/products/orange-courage-shirt.svg",
         name: "sleeve striped t-shirt",
         currentRating: 4.5,
         page: "top",
@@ -67,7 +67,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/shorts.svg",
+        image: "images/products/shorts.svg",
         name: "loose fit bermude shorts",
         currentRating: 3.0,
         page: "top",
@@ -78,7 +78,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/black-jeans.svg",
+        image: "images/products/black-jeans.svg",
         name: "faded skinny jeans",
         currentRating: 4.5,
         page: "top",
@@ -89,7 +89,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/polo-blue.svg",
+        image: "images/products/polo-blue.svg",
         name: "Polo with Contrast Trims",
         currentRating: 4.5,
         page: "suggestions",
@@ -100,7 +100,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/gradient-shirt.svg",
+        image: "images/products/gradient-shirt.svg",
         name: "Gradient Graphic T-shirt",
         currentRating: 4.5,
         page: "suggestions",
@@ -111,7 +111,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/polo-pink.svg",
+        image: "images/products/polo-pink.svg",
         name: "Polo with Tipping Details",
         currentRating: 4.5,
         page: "suggestions",
@@ -122,7 +122,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/black-striped.svg",
+        image: "images/products/black-striped.svg",
         name: "Black Striped T-shirt",
         currentRating: 4.5,
         page: "suggestions",
@@ -133,7 +133,7 @@ export const products = [
     },
 //----------------------------------
     {
-        image: "/src/assets/images/products/black-striped.svg",
+        image: "images/products/black-striped.svg",
         name: "Black Striped T-shirt",
         currentRating: 4.5,
         page: "categories",
@@ -144,7 +144,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/polo-pink.svg",
+        image: "images/products/polo-pink.svg",
         name: "Polo with Tipping Details",
         currentRating: 4.5,
         page: "categories",
@@ -155,7 +155,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/polo-blue.svg",
+        image: "images/products/polo-blue.svg",
         name: "Polo with Contrast Trims",
         currentRating: 4.5,
         page: "categories",
@@ -166,7 +166,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/orange-courage-shirt.svg",
+        image: "images/products/orange-courage-shirt.svg",
         name: "sleeve striped t-shirt",
         currentRating: 4.5,
         page: "categories",
@@ -177,7 +177,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/polo-blue.svg",
+        image: "images/products/polo-blue.svg",
         name: "Polo with Contrast Trims",
         currentRating: 4.5,
         page: "categories",
@@ -188,7 +188,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/black-striped.svg",
+        image: "images/products/black-striped.svg",
         name: "Black Striped T-shirt",
         currentRating: 4.5,
         page: "categories",
@@ -199,7 +199,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/shorts.svg",
+        image: "images/products/shorts.svg",
         name: "loose fit bermude shorts",
         currentRating: 3.0,
         page: "categories",
@@ -210,7 +210,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/black-jeans.svg",
+        image: "images/products/black-jeans.svg",
         name: "faded skinny jeans",
         currentRating: 4.5,
         page: "categories",
@@ -221,7 +221,7 @@ export const products = [
     },
 
     {
-        image: "/src/assets/images/products/shirt.svg",
+        image: "images/products/shirt.svg",
         name: "checkered shirt",
         currentRating: 4.5,
         page: "categories",
